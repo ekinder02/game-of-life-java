@@ -4,7 +4,6 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 import gof.core.Board;
-import gof.core.Cell;
 import gof.core.DisplayDriver;
 
 public class Display {
@@ -14,7 +13,6 @@ public class Display {
         try {
             driver = new EclipseDriver();
         } catch (AWTException e) {
-            // TODO: implement a better fall-back
             driver = new ConsoleDriver();
         }
         
