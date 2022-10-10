@@ -15,7 +15,7 @@ public class GameOfLife {
         DisplayDriver dd = Display.getDriver();
         Board b = new Board(10, 10, 0.3);
 
-        for (int i = 0; i <= iterations; i++) {
+        for (int i = 1; i <= iterations; i++) {
             dd.displayBoard(b);
             b.update();
             Thread.sleep(300);
